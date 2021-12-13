@@ -1,48 +1,84 @@
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+:root {
+    --bs-blue: red;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    background: url('../img/svg/background.svg') #f9f9f9 top center no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    color: black;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
+.btn {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+.sticky-header {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.5rem 2.875rem rgba(0,0,0,0.05);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
 }
 
-.date {
-    float: right;
-    color: #828282;
+.sticky-header-logo {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: none;
 }
 
-.save {
-    float: right;
+.post-date {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;    
+    background: #F4F5F7;
+    border-radius: 4px;
+
 }
 
-.post-form textarea, .post-form input {
-    width: 100%;
+.post-author-badge {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: var(--bs-indigo);
+    color: white;
+    font-size: 0;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+.post-author-badge:first-letter {
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
-.post {
-    margin-bottom: 70px;
+.card {
+    background: white;
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 10px;box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1);
 }
 
-.post h1 a, .post h1 a:visited {
-    color: #000000;
+.card-footer {
+    background: transparent;
+    border-top: 0;
 }
-    
+
+.footer-row {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
