@@ -11,7 +11,7 @@
                     </div>
                     <div class="card-body">
                     <h1><a class="stretched-link" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaksbr }}</p>
+                    <p>{{ post.text|safe }}</p>
                     </div>
                     <div class="card-footer">
                         <div class="d-flex align-items-center">

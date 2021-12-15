@@ -16,6 +16,6 @@
                 </span>
             </div>
         {% endif %}
-        <div class="post-detail-desc mt-5">{{ post.text|linebreaksbr }}</div>
+        <div class="post-detail-desc mt-5">{{ post.text|safe }}</div>
     </div>
 {% endblock %}

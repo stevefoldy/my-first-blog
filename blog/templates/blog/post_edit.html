@@ -3,7 +3,8 @@
 {% block content %}
     <h1>Create a new post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
+        {{ form.as_p | safe }}
+        {{ form.media }}
         <button type="submit" class="save btn btn-primary">Save</button>
     </form>
 {% endblock %}
